@@ -17,7 +17,6 @@ routes.post('/sessions', celebrate({
 
 routes.get('/ongs', OngController.index);
 
-
 routes.post('/ongs', celebrate({
   [Segments.BODY]: Joi.object().keys({
     name: Joi.string().required(),
